@@ -1,0 +1,129 @@
+.sign-in {
+	width: 30%;
+	left: 50%;
+	margin-left: -15%;
+	padding-top: 90px;
+	.logo-company {
+		padding-bottom: 20px;
+		padding-left: 45px;
+	}
+	.form-sign-in {
+		box-shadow: 1px 1px 2px #EEEEEE, -1px -1px 2px #EEEEEE;
+    	border-radius: 5px;
+		.form {
+			padding-top: 30px;
+			padding-bottom: 30px;
+			background: #fff;
+			form {
+				width: 100%;
+				fieldset {
+					border: none !important;
+				}
+				input {
+					color: #333;
+					transition: 0.3s;
+					background-color: transparent !important;
+					padding-left: 20px;
+					width: 100%;
+					height: 40px;
+					margin: 3px;
+					border-radius: 4px;
+					border: 3px solid #333;
+					&:focus {
+						border-radius: 6px;
+						border: 3px solid @color-default;
+						-webkit-appearance: caps-lock-indicator;
+						outline: none;
+					}
+				}
+				input::-webkit-input-placeholder,
+				textarea::-webkit-input-placeholder {
+					color: @color-default;
+				}
+				legend {
+					padding-bottom: 5px;
+				}
+				.x {
+					margin-bottom: 20px;
+				}
+				.rememberme{
+					label {
+						font-size: 13px;
+					}
+					.checkbox {
+						vertical-align: top;
+						width: 17px;
+						height: 17px;
+					}
+					.checkbox + label {
+						cursor: pointer;
+					}
+					.checkbox:not(checked) {
+						position: absolute;
+						opacity: 0;
+					}
+					.checkbox:not(checked) + label {
+						color: rgb(2, 168, 243);
+						position: relative;
+						padding: 0 0 0 60px;
+						padding-top: 1px;
+					}
+					.checkbox:not(checked) + label:before {
+						content: '';
+						position: absolute;
+						top: -2px;
+						left: 0;
+						width: 50px;
+						height: 22px;
+						border-radius: 13px;
+						background: rgba(2, 168, 243,.1);
+						border: 3px solid rgb(2, 168, 243);
+						box-shadow: inset 0 2px 3px rgba(0,0,0,.2);
+					}
+					.checkbox:not(checked) + label:after {
+						content: '';
+						position: absolute;
+						top: -3px;
+						left: 0px;
+						width: 23px;
+						height: 23px;
+						border-radius: 10px;
+						background: rgb(2, 168, 243);
+						box-shadow: 0 2px 5px rgba(0,0,0,.3);
+						transition: all .2s;
+					}
+					.checkbox:checked + label:before {
+						background: rgba(2, 168, 243,.5);
+					}
+					.checkbox:checked + label:after {
+						left: 26px;
+					}
+				}
+				button {
+					margin-top: 20px;
+					border: none;
+					color: white;
+					transition: 0.3s;
+					font-size: 14px;
+					font-weight: bold;
+					background-color: @color-default;
+					border-radius: 4px;
+					box-shadow: 1px 1px 5px rgba(0,0,0,.2);
+					text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+					padding: 10px 30px;
+					&:hover {
+						cursor: pointer;
+						box-shadow: none;
+					}
+				}
+			}
+		}
+	}
+	.dop-link {
+		padding-left: 45px;
+		li {
+			padding-top: 4px;
+			padding-bottom: 4px;
+		}
+	}
+}

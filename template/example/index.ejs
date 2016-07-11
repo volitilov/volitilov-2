@@ -2,160 +2,21 @@
 <div class="col-md-12 page-header">
 	<h3>Example - One Page Personal Portfolio Template</h3>
 	<ul class="site-breadcrumbs">
-		<li><a href="#">Home</a></li>
+		<li><a href="/">Home</a></li>
 		<li><i class="fa fa-angle-right"></i></li>
-		<li><a href="#">Templates</a></li>
+		<li><a href="/category/all/">Templates</a></li>
 		<li><i class="fa fa-angle-right"></i></li>
 		<li>Example</li>
 	</ul>
 </div>
-<div class="col-md-12">
-	<div class="col-md-12 content">
+<div class="col-md-12 content">
+	<div class="col-md-12 template-body">
 		<div class="col-md-8 template">
 			<img src="/images/corvus-l.jpg"/>
 		</div>
-		<div class="col-md-4 description">
-			<ul class="text-left">
-				<li><a href="#"><i class="fa fa-github"></i></a></li>
-				<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-				<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-				<li><a href="#"><i class="fa fa-pinterest-p"></i></a></li>
-				<li><a href="#"><i class="fa fa-youtube"></i></a></li>
-			</ul>
-			<div class="col-md-12 button-group">
-				<ul>
-					<li><a href="#">Live Preview</a></li>
-					<li><a href="#">Sign Up & Download</a></li>
-				</ul>
-			</div>
-			<div class="col-md-12 description">
-				<h3>Description</h3>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque iusto temporibus quae rem dolore blanditiis nostrum ad tempora veniam! Laudantium error odio officia repellendus eaque quas harum tenetur, beatae officiis!</p>
-			</div>
-		</div>
-	</div>
-	<div class="col-md-12 more">
-		<h2>Latest Templates</h2>
-	<div class="col-md-12 content">
-		<ul>
-			<li>
-				<article class="col-md-3">
-					<div class="col-md-12 media">
-						<a href="/template/example/">
-							<img src="/images/corvus-s.jpg"/>
-						</a>
-					</div>
-					<div class="col-md-12 details">
-						<a href="/template/example/">
-							<h2>Corvus - Onepage Personal Portfolio</h2>
-						</a>
-					</div>
-				</article>
-			</li>
-			<li>
-				<article class="col-md-3">
-					<div class="col-md-12 media">
-						<a href="/template/example/">
-							<img src="/images/corvus-s.jpg"/>
-						</a>
-					</div>
-					<div class="col-md-12 details">
-						<a href="/template/example/">
-							<h2>Corvus - Onepage Personal Portfolio</h2>
-						</a>
-					</div>
-				</article>
-			</li>
-			<li>
-				<article class="col-md-3">
-					<div class="col-md-12 media">
-						<a href="/template/example/">
-							<img src="/images/corvus-s.jpg"/>
-						</a>
-					</div>
-					<div class="col-md-12 details">
-						<a href="/template/example/">
-							<h2>Corvus - Onepage Personal Portfolio</h2>
-						</a>
-					</div>
-				</article>
-			</li>
-			<li>
-				<article class="col-md-3">
-					<div class="col-md-12 media">
-						<a href="/template/example/">
-							<img src="/images/corvus-s.jpg"/>
-						</a>
-					</div>
-					<div class="col-md-12 details">
-						<a href="/template/example/">
-							<h2>Corvus - Onepage Personal Portfolio</h2>
-						</a>
-					</div>
-				</article>
-			</li>
-			<li>
-				<article class="col-md-3">
-					<div class="col-md-12 media">
-						<a href="/template/example/">
-							<img src="/images/corvus-s.jpg"/>
-						</a>
-					</div>
-					<div class="col-md-12 details">
-						<a href="/template/example/">
-							<h2>Corvus - Onepage Personal Portfolio</h2>
-						</a>
-					</div>
-				</article>
-			</li>
-			<li>
-				<article class="col-md-3">
-					<div class="col-md-12 media">
-						<a href="/template/example/">
-							<img src="/images/corvus-s.jpg"/>
-						</a>
-					</div>
-					<div class="col-md-12 details">
-						<a href="/template/example/">
-							<h2>Corvus - Onepage Personal Portfolio</h2>
-						</a>
-					</div>
-				</article>
-			</li>
-			<li>
-				<article class="col-md-3">
-					<div class="col-md-12 media">
-						<a href="/template/example/">
-							<img src="/images/corvus-s.jpg"/>
-						</a>
-					</div>
-					<div class="col-md-12 details">
-						<a href="/template/example/">
-							<h2>Corvus - Onepage Personal Portfolio</h2>
-						</a>
-					</div>
-				</article>
-			</li>
-			<li>
-				<article class="col-md-3">
-					<div class="col-md-12 media">
-						<a href="/template/example/">
-							<img src="/images/corvus-s.jpg"/>
-						</a>
-					</div>
-					<div class="col-md-12 details">
-						<a href="/template/example/">
-							<h2>Corvus - Onepage Personal Portfolio</h2>
-						</a>
-					</div>
-				</article>
-			</li>
-		</ul>
-	</div>
-	</div>
-	<div class="sign-up1">
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut blanditiis ipsam ab error rem similique illum neque laudantium sint. Nulla placeat necessitatibus assumenda eligendi alias corrupti id laborum. Natus, quidem!</p>
-		<a href="#">Sign Up Today</a>
+		<% include ./../../components/_sidebar %>
 	</div>
 </div>
+<% include ./../../components/_more %>
+<% include ./../../components/_sign-up2 %>
 <% include ./../../components/_footer %>
