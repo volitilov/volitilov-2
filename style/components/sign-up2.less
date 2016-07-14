@@ -13,22 +13,26 @@
 		padding-bottom: 20px;
 	}
 	a {
+		transition: 0.4s;
 		font-family: inherit;
 		font-size: 15px;
 		font-style: inherit;
 		font-weight: bold;
 		color: #fff;
 		background-color: rgb(2, 168, 243);
-		padding: 12px 20px;
+		padding: 16px 35px;
 		margin: 0 5px 5px 0;
 		display: inline-block;
 		border-radius: 3px;
 		text-shadow: none;
 		outline: none;
 		-webkit-appearance: none;
+		-webkit-box-shadow: 0px 12px 25px -5px rgba(0,0,0,0.3);
+				-moz-box-shadow: 0px 12px 25px -5px rgba(0,0,0,0.3);
+				box-shadow: 0px 12px 25px -5px rgba(0,0,0,0.3);
 		&:hover {
+			box-shadow: none;
 			color: #fff !important;
-			background: #2bbafc;
 		}
 	}
 }

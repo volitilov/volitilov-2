@@ -1,0 +1,107 @@
+///////////////////////////////////////// default mobile devioces
+.contacts {
+	padding-left: 190px;
+	padding-right: 190px;
+	padding-top: 20px;
+	padding-bottom: 150px;
+}
+h4 {
+	color: #666;
+	font-weight: 500;
+	line-height: 1.5;
+	padding-bottom: 10px;
+	border-bottom: 1px solid rgba(0,0,0,.08);
+}
+.form-contacts {
+	padding: 0px;
+	form {
+		width: 100%;
+		fieldset {
+			border: none !important;
+		}
+		input {
+			color: #333;
+			transition: 0.3s;
+			background-color: transparent !important;
+			padding-left: 20px;
+			width: 30%;
+			height: 40px;
+			margin-top: 10px;
+			margin-bottom: 20px;
+			border-radius: 4px;
+			border: 3px solid #ddd;
+			&:focus {
+				border-radius: 6px;
+				border: 3px solid @color-default;
+				-webkit-appearance: caps-lock-indicator;
+				outline: none;
+			}
+		}
+		textarea {
+			color: #333;
+			transition: 0.3s;
+			background-color: transparent !important;
+			margin-top: 10px;
+			padding-left: 20px;
+			padding-top: 20px;
+			width: 100%;
+			border-radius: 4px;
+			height: 200px;
+			border: 3px solid #333;
+			&:focus {
+				border-radius: 6px;
+				border: 3px solid @color-default;
+				-webkit-appearance: caps-lock-indicator;
+				outline: none;
+			}	
+		}
+		input::-webkit-input-placeholder,
+		textarea::-webkit-input-placeholder {
+			color: @color-default;
+		}
+		input::-webkit-outer-spin-button,
+		input::-webkit-inner-spin-button {
+			-webkit-appearance: none;
+			margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+		}
+		legend {
+			
+		}
+		button {
+			transition: 0.4s;
+			margin-top: 20px;
+			border: none;
+			color: white;
+			font-size: 14px;
+			font-weight: bold;
+			background-color: @color-default;
+			border-radius: 2px;
+			-webkit-box-shadow: 0px 8px 15px -5px rgba(0,0,0,0.3);
+				-moz-box-shadow: 0px 8px 15px -5px rgba(0,0,0,0.3);
+				box-shadow: 0px 8px 15px -5px rgba(0,0,0,0.3);
+			padding: 10px 30px;
+			&:hover {
+				cursor: pointer;
+				box-shadow: none;
+			}
+		}
+	}
+	.alert {
+		border-color: #333;
+	}
+}
+
+///////////////////////////////////////////////////	tablet devices
+@media  (min-width : 768px)  {
+	
+}
+
+///////////////////////////////////////////////////	laptop devices
+@media  (min-width : 996px) {
+	// not required
+}
+
+///////////////////////////////////////////////////	dekstop devices
+@media  (min-width : 1200px) {
+	
+}

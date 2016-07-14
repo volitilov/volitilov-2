@@ -5,23 +5,28 @@
 		padding: 20px;
 		margin-bottom: 50px;
 		text-align: center;
+		border-radius: 4px;
 		border: 1px solid #eee;
 		.head-item {
 			img {
 				width: 15%;
 			}
+			h4 {
+				border-bottom: 1px solid rgba(0,0,0,.08);
+			}
 			h5 {
 				font-size: 13px;
 				color: rgba(0,0,0,.3);
-				border-bottom: 1px solid #ddd;
+				border-bottom: 1px solid rgba(0,0,0,.08);
 				padding-bottom: 10px;
 			}
 		}
 		.body-item {
 			.price {
-				border-bottom: 1px solid #ddd;
+				border-bottom: 1px solid rgba(0,0,0,.08);
 				padding-bottom: 20px;
 				h1 {
+					font-size: 40px;
 					color: rgb(2, 168, 243);
 				}
 				p {
@@ -29,7 +34,7 @@
 				}
 			}
 			.description {
-				border-bottom: 1px solid #ddd;
+				border-bottom: 1px solid rgba(0,0,0,.08);
 				padding-top: 20px;
 				padding-bottom: 20px;
 				margin-bottom: 20px;
@@ -45,23 +50,28 @@
 			}
 		}
 		button {
+			transition: 0.4s;
 			color: white;
 			font-size: 14px;
 			font-weight: bold;
 			background-color: @color-default;
 			border: none;
 			border-radius: 4px;
-			padding: 10px 25px;
+			padding: 13px 30px;
+			-webkit-box-shadow: 0px 12px 25px -5px rgba(0,0,0,0.3);
+				-moz-box-shadow: 0px 12px 25px -5px rgba(0,0,0,0.3);
+				box-shadow: 0px 12px 25px -5px rgba(0,0,0,0.3);
 			&:hover {
-				background: #2bbafc;
+				box-shadow: none;
 				cursor: pointer;
 			}
 		}
 	}
 	.x {
 		background: #f7f7f7;
-		border: 1px solid #eee;
-		border-radius: 4px;
+		margin-top: -30px;
+		padding-top: 80px !important;
+		padding-bottom: 80px !important;
 	}
 }
 ///////////////////////////////////////////////////	tablet devices

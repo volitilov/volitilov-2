@@ -100,16 +100,17 @@
 					}
 				}
 				button {
+					transition: 0.4s;
 					margin-top: 20px;
 					border: none;
 					color: white;
-					transition: 0.3s;
 					font-size: 14px;
 					font-weight: bold;
 					background-color: @color-default;
-					border-radius: 4px;
-					box-shadow: 1px 1px 5px rgba(0,0,0,.2);
-					text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+					border-radius: 2px;
+					-webkit-box-shadow: 0px 8px 15px -5px rgba(0,0,0,0.3);
+					-moz-box-shadow: 0px 8px 15px -5px rgba(0,0,0,0.3);
+					box-shadow: 0px 8px 15px -5px rgba(0,0,0,0.3);
 					padding: 10px 30px;
 					&:hover {
 						cursor: pointer;
@@ -124,6 +125,9 @@
 		li {
 			padding-top: 4px;
 			padding-bottom: 4px;
+			a:hover {
+				text-decoration: underline !important;
+			}
 		}
 	}
 }
