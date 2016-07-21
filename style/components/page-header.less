@@ -1,7 +1,7 @@
 .page-header {
 	margin: 0;
-    padding-left: 190px;
-    padding-right: 185px;
+    padding-left: 30px;
+    padding-right: 30px;
     padding-bottom: 5px;
     background: #f7f7f7;
     border-top: 1px solid #e4e4e4;
@@ -20,14 +20,30 @@
     	display: inline-block;
     }
    	.site-breadcrumbs {
-		text-align: right;
+		text-align: left;
 		height: 32px;
 		line-height: 32px;
-		margin-top: -38px;
 		color: #bcbcbc;
 		font-weight: normal;
         a:hover {
             text-decoration: underline !important;
         }
 	}
+}
+/////////////////////////////////////////////////// tablet devices
+@media  (min-width : 768px)  {
+    .page-header {
+        padding-left: 190px;
+        padding-right: 185px;
+    }
+}
+
+/////////////////////////////////////////////////// laptop and dekstop devices
+@media  (min-width : 981px) {
+    .page-header {
+        .site-breadcrumbs {
+            text-align: right;
+            margin-top: -38px;
+        }
+    }
 }

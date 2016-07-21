@@ -20,8 +20,8 @@ footer {
 	.footer-body {
 		padding-top: 20px;
 		padding-bottom: 30px;
-		padding-left: 180px;
-		padding-right: 180px;
+		padding-left: 30px;
+		padding-right: 30px;
 		background: #262626;
 		li {
 			display: inline;
@@ -48,19 +48,17 @@ footer {
 			li {
 				display: block;
 			}
-			padding-left: 50px;
 		}
 		.popular {
 			li {
 				display: block;
 			}
-			padding-left: 50px;
+			
 		}
 		.also {
 			li {
 				display: block;
 			}
-			padding-left: 50px;
 			i {
 				font-size: 30px;
 			}
@@ -70,11 +68,31 @@ footer {
 		background: #222;
     	color: #999;
     	padding-top: 20px;
-    	padding-left: 180px;
-    	padding-right: 180px;
+    	padding-left: 30px;
+    	padding-right: 30px;
     	padding-bottom: 20px;
     	a {
+    		margin-left: 5px;
     		color: rgb(2, 168, 243);
     	}
 	}
+}
+///////////////////////////////////////////////////	tablet devices
+@media  (min-width : 768px)  {
+	footer {
+		.footer-body {
+			padding-left: 180px;
+			padding-right: 180px;
+			
+		}
+		.footer-copyright {
+			padding-left: 180px;
+			padding-right: 180px;
+		}
+	}
+}
+
+///////////////////////////////////////////////////	laptop and dekstop devices
+@media  (min-width : 981px) {
+	
 }
